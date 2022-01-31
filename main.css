@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-body: "Lato", sans-serif;
+  --clr-bg-body: hsl(0, 0%, 20%);
+  --clr-body: hsl(0, 0%, 13%);
+  --clr-container: hsl(0, 0%, 98%);
+  --clr-bg-circle: hsl(0, 100%, 74%);
+}
+
+body {
+  font-family: var(--ff-body);
+  background-color: var(--clr-bg-body);
+  color: var(--clr-body);
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: var(--clr-container);
+  width: 100vw;
+  min-height: 100vh;
+  padding: 70px;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+}
+
+/*la clase show nav hace que rote la pag*/
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+/*contenedor del contenedor de los botones*/
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+/* contenedor de los botones*/
+.circle {
+  background-color: var(--clr-bg-circle);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
