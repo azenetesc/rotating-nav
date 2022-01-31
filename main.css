@@ -132,19 +132,16 @@ a:focus-visible {
   transition: transform 0.5s linear;
 }
 
-/*la clase show nav hace que rote la pag*/
 .container.show-nav {
   transform: rotate(-20deg);
 }
 
-/*contenedor del contenedor de los botones*/
 .circle-container {
   position: fixed;
   top: -100px;
   left: -100px;
 }
 
-/* contenedor de los botones*/
 .circle {
   background-color: var(--clr-bg-circle);
   height: 200px;
@@ -154,7 +151,6 @@ a:focus-visible {
   transition: transform 0.5s linear;
 }
 
-/*los botones. esto modifica ambos botones*/
 .circle button {
   position: absolute;
   top: 50%;
@@ -167,11 +163,9 @@ a:focus-visible {
   cursor: pointer;
 }
 
-/*las barras que abren el menu nav*/
 .circle button#open {
   left: 60%;
 }
-/*este boton de cerrar se va a ver cuando la pagina este en rotacion de 20deg*/
 .circle button#close {
   top: 60%;
   transform: rotate(90deg);
